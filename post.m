@@ -17,7 +17,7 @@ m=mean(points);
 plot(m(1,1), m(1,2), 'go');
 s=std(points);
 drawEllipse(m(1,1), m(1,2), s(1,1), s(1,2), 'b');
-summary=sprintf("mean %d %d std %d %d score %f", round(m(1,1)), round(m(1,2)), round(s(1,1)), round(s(1,2)), sum(score) / 50)
+summary=sprintf("mean %d %d std %d %d score %f", round(m(1,1)), round(m(1,2)), round(s(1,1)), round(s(1,2)), mean(score))
 title(summary);
 print(sprintf("%s.png", argv(){1}))
 save(sprintf("%s.stats", argv(){1}));
