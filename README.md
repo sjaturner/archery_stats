@@ -25,22 +25,24 @@ are used to the process.
         python picker.py IMG_20200614_122251650.jpg > IMG_20200614_122251650.jpg.points
 
 6. The picker program will display your target photograph in a window. It's best to maximise that window before you go any further.
-7. It's important that the program understands the dimensions of the target. In order to inform the program left click first on the precise center of the target, then at the point on the outer circle directly above that, then on the point on the outer circle to the right of the center. ![First three points](./2020-06-14_19-28.png)
-8. If you make a mistake at any point, it seems as if you can press delete to undo.
-9. Having made an accurate selection of the first three points, click on every arrow hole in the target.
-10. You should end up with something like this: ![All points added](./2020-06-14_19-40.png)
-11. Press [Enter], then close the Matplotlib window.
-12. If you cat the .points file then it should contain two columns of numbers.
-13. Again from a command line prompt in this directory, type this _but with your newly created .points file_:
+7. It's important that the program understands the dimensions of the target. In order to inform the program left click first on the precise center of the target, then at the point on the outer circle directly above that, then on the point on the outer circle to the right of the center, then the point at the bottom of the outer circle then at the left. ![First three points](./2020-06-14_19-28.png)
+8. That's center, top, right, bottom, left. Essentially center then clockwise around the outer ring.
+9. If you make a mistake at any point, it seems as if you can press delete to undo.
+10. Having made an accurate selection of the first three points, click on every arrow hole in the target.
+11. You should end up with something like this: ![All points added](./2020-06-14_19-40.png)
+12. Press [Enter], then close the Matplotlib window.
+13. If you cat the .points file then it should contain two columns of numbers.
+14. Again from a command line prompt in this directory, type this _but with your newly created .points file_:
 
         octave post.m  IMG_20200614_122251650.jpg.points
 
-14. This will create two new files in the directory, in my case:
+15. This will create two new files in the directory, in my case:
 
         IMG_20200614_122251650.jpg.points.png
         IMG_20200614_122251650.jpg.points.stats 
 
-15. The first of those is a plot of the target with the arrow marks, the title summarises the stats. There should be a green dot at the mean position, a blue ellipse for the standard deviation and red dots for the arrow holes.
-16. The second is just a dump of the octave variables, in case you'd like to do some more maths.
+16. See ![IMG_20200614_122251650.jpg.points.png](./output.jpg.points.png)
+17. The first of those is a plot of the target with the arrow marks, the title summarises the stats. There should be a green dot at the mean position, a blue ellipse for the standard deviation and red dots for the arrow holes.
+18. The second is just a dump of the octave variables, in case you'd like to do some more maths.
 
 I hope you are better at archery than I am.

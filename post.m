@@ -13,7 +13,7 @@ points(:,1)=polyval(px, points(:,1)')'
 py=polyfit([miny, 0, maxy], [-200, 0, 200], 2);
 points(:,2)=polyval(py, points(:,2)')'
 
-points=floor(points);
+points=floor(points(6:end,:));
 
 pkg load geometry
 
