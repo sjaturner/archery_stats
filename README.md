@@ -42,9 +42,3 @@ are used to the process.
 
 15. The first of those is a plot of the target with the arrow marks, the title summarises the stats. There should be a green dot at the mean position, a blue ellipse for the standard deviation and red dots for the arrow holes.
 16. The second is just a dump of the octave variables, in case you'd like to do some more maths.
-
-
-
-
-
-
