@@ -28,9 +28,9 @@ are used to the process.
 7. It's important that the program understands the dimensions of the target. In order to inform the program left click first on the precise center of the target, then at the point on the outer circle directly above that, then on the point on the outer circle to the right of the center, then the point at the bottom of the outer circle then at the left. ![First three points](./2020-06-14_19-28.png)
 8. That's center, top, right, bottom, left. Essentially center then clockwise around the outer ring.
 9. If you make a mistake at any point, it seems as if you can press delete to undo.
-10. Having made an accurate selection of the first three points, click on every arrow hole in the target.
+10. Having made an accurate selection of the first three points, click on every arrow hole in the target. The numbers in the diagram above show the order - it is important to get that right.
 11. You should end up with something like this: ![All points added](./2020-06-14_19-40.png)
-12. Press [Enter], then close the Matplotlib window.
+12. Press [Enter], then close the Matplotlib window - I do that by pressing 'q'
 13. If you cat the .points file then it should contain two columns of numbers.
 14. Again from a command line prompt in this directory, type this _but with your newly created .points file_:
 
