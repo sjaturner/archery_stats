@@ -6,7 +6,7 @@ points(:,1)=points(:,1)/points(3,1)*200;points(:,2)=points(:,2)/points(2,2)*200;
 pkg load geometry
 
 hold on
-axis("square")
+axis("equal")
 for bound = 40:20:200
    drawCircle(0, 0, bound, 'k');
 end

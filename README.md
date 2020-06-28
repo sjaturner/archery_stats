@@ -13,6 +13,9 @@ You will need python, python-matplotlib and Octave.
 
 ## Workflow
 
+This looks complex but really only takes a couple of minutes once you
+are used to the process.
+
 1. Obtain a new target face.
 2. Shoot some arrows at it.
 3. Take a picture of the target face with your mobile phone, try to keep the phone vertical and ensure that the outer circle of the target is completely within the frame. 
