@@ -2,16 +2,16 @@ points=load(argv(){1});
 points(:,2)*=-1;
 points-=points(1,:);
 
-maxy = points(2,2)
-maxx = points(3,1)
-miny = points(4,2)
-minx = points(5,1)
+maxy = points(2,2);
+maxx = points(3,1);
+miny = points(4,2);
+minx = points(5,1);
 
 px=polyfit([minx, 0, maxx], [-200, 0, 200], 2);
-points(:,1)=polyval(px, points(:,1)')'
+points(:,1)=polyval(px, points(:,1)')';
 
 py=polyfit([miny, 0, maxy], [-200, 0, 200], 2);
-points(:,2)=polyval(py, points(:,2)')'
+points(:,2)=polyval(py, points(:,2)')';
 
 points=floor(points(6:end,:));
 
@@ -23,8 +23,8 @@ for bound = 20:20:200
    drawCircle(0, 0, bound, 'k');
 end
 
-score = 1 + 10 * (1 - ((sum(points.^2,2).^.5)/200))
-card = floor(score)
+score = 1 + 10 * (1 - ((sum(points.^2,2).^.5)/200));
+card = floor(score);
 
 plot(points(:,1), points(:,2),'ro');
 m=mean(points);
